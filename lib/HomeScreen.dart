@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Feed.dart';
+import 'package:tellme_flutter_app/CategoriesScreen.dart';
+import './Feed.dart';
 
 /// This is the stateful widget that the main application instantiates.
 class HomeScreen extends StatefulWidget {
@@ -16,10 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     Feed(),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
+    CategoriesScreen(),
     Text(
       'Index 2: School',
       style: optionStyle,
@@ -40,11 +38,11 @@ class _HomeScreenState extends State<HomeScreen> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'Feed',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.search),
+            label: 'Categories',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_circle_sharp),

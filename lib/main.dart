@@ -8,7 +8,7 @@ import 'dart:convert' show json, base64, ascii;
 import 'dart:convert';
 import './AuthUser.dart';
 import './AuthResponse.dart';
-import './Question.dart';
+import 'Models/Question.dart';
 import './LoginScreen.dart';
 import './RegistrationScreen.dart';
 

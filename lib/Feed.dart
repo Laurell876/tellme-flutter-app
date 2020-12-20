@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tellme_flutter_app/QuestionCard.dart';
-import './Question.dart';
+import 'Models/Question.dart';
 
 class Feed extends StatelessWidget {
-  var questions = [
+  List<Question> questions = [
     new Question(
         id: 32,
         user_id: 16,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tellme_flutter_app/Question.dart';
+import './Models/Question.dart';
 
 class QuestionCard extends StatelessWidget {
   final Question question;
