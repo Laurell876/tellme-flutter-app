@@ -79,7 +79,10 @@ class LoginScreen extends StatelessWidget {
                 color: Colors.black,
                 splashColor: Colors.black26,
                 onPressed: () {
-                  print('done');
+                  Navigator.pushNamed(
+                      context,
+                      '/home'
+                  );
                 },
                 child: Text(
                   'Login',

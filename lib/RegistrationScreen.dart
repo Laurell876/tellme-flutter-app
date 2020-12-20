@@ -20,7 +20,7 @@ class RegistrationScreen extends StatelessWidget {
               alignment: Alignment.center,
               width: MediaQuery.of(context).size.width * 0.80,
               height: 80,
-              color:  Colors.black.withOpacity(0.4),
+              color: Colors.black.withOpacity(0.4),
               child: Text("TellMe",
                   style: TextStyle(
                     color: Colors.white,
@@ -37,8 +37,9 @@ class RegistrationScreen extends StatelessWidget {
                 ),
                 cursorColor: Colors.white,
                 decoration: InputDecoration(
-                  focusedBorder:OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white, width: 2.0),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(color: Colors.white, width: 2.0),
                   ),
                   hintText: 'First Name',
                   hintStyle: TextStyle(fontSize: 15.0, color: Colors.white),
@@ -57,8 +58,9 @@ class RegistrationScreen extends StatelessWidget {
                 ),
                 cursorColor: Colors.white,
                 decoration: InputDecoration(
-                  focusedBorder:OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white, width: 2.0),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(color: Colors.white, width: 2.0),
                   ),
                   hintText: 'Last Name',
                   hintStyle: TextStyle(fontSize: 15.0, color: Colors.white),
@@ -77,8 +79,9 @@ class RegistrationScreen extends StatelessWidget {
                 ),
                 cursorColor: Colors.white,
                 decoration: InputDecoration(
-                  focusedBorder:OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white, width: 2.0),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(color: Colors.white, width: 2.0),
                   ),
                   hintText: 'Email Address',
                   hintStyle: TextStyle(fontSize: 15.0, color: Colors.white),
@@ -98,8 +101,9 @@ class RegistrationScreen extends StatelessWidget {
                 ),
                 cursorColor: Colors.white,
                 decoration: InputDecoration(
-                  focusedBorder:OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white, width: 2.0),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(color: Colors.white, width: 2.0),
                   ),
                   hintText: 'Password',
                   hintStyle: TextStyle(fontSize: 15.0, color: Colors.white),
@@ -119,7 +123,7 @@ class RegistrationScreen extends StatelessWidget {
                 color: Colors.black,
                 splashColor: Colors.black26,
                 onPressed: () {
-                  print('done');
+                  Navigator.pushNamed(context, '/home');
                 },
                 child: Text(
                   'Create An Account',
@@ -133,26 +137,19 @@ class RegistrationScreen extends StatelessWidget {
               children: [
                 Text(
                   "Already have an account?",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 15
-                  ),
+                  style: TextStyle(color: Colors.white, fontSize: 15),
                 ),
                 SizedBox(width: 5),
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(
-                        context,
-                        '/'
-                    );
+                    Navigator.pushNamed(context, '/');
                   },
                   child: Text(
                     "LOGIN",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
-                        fontSize: 15
-                    ),
+                        fontSize: 15),
                   ),
                 )
               ],

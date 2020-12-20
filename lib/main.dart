@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:tellme_flutter_app/HomeScreen.dart';
 import 'dart:convert' show json, base64, ascii;
 import 'dart:convert';
 import './AuthUser.dart';
@@ -22,10 +23,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       debugShowCheckedModeBanner: false,
       routes: {
         '/':(context)=>LoginScreen(),
-        '/registration':(context)=>RegistrationScreen()
+        '/registration':(context)=>RegistrationScreen(),
+        '/home':(context)=>HomeScreen(),
       }
     );
   }
